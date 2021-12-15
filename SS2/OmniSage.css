@@ -78,3 +78,11 @@ nav .max-width .menu li:hover {
   position: absolute;
   z-index: 2;
 }
+
+.max-width .logo {
+  z-index: 3;
+}
+
+.max-width .menu {
+  z-index: 3;
+}
