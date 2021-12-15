@@ -1,0 +1,80 @@
+/* ép kiểu trang web */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* những phần style chung */
+.max-width {
+  max-width: 1300px;
+  /* chiều ngang <= 1300px */
+  padding: 50px;
+  /* khoảng cách từ content -> border thẻ */
+  margin: 0px auto;
+}
+
+
+/* ************************ */
+
+
+/* home menu */
+.home-menu {
+  background-image: url(./images/hero.jpg);
+  height: 700px;
+  background-size: cover;
+  color: #fff;
+
+  position: relative;
+  /* đặt mốc đây là tầng thứ  1*/
+}
+
+nav {
+  margin-left: 10%;
+}
+
+
+nav .max-width {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav .max-width .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 600px;
+  height: 80px;
+  align-items: center;
+}
+
+nav .max-width .menu li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+nav .max-width .menu li:hover {
+  color: orange;
+}
+
+.max-width .logo img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Style opacity-menu */
+.opacity-menu {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+
+
+  /* phân tầng */
+  position: absolute;
+  z-index: 2;
+}
