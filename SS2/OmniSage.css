@@ -86,3 +86,51 @@ nav .max-width .menu li:hover {
 .max-width .menu {
   z-index: 3;
 }
+
+
+/* stye content-menu */
+.home-menu .content-menu {
+  width: 900px;
+  height: 200px;
+  margin-left: 10%;
+  padding: 50px;
+  color: #fff;
+
+  /* phân tầng cho nó */
+  position: relative;
+  /* đặt mốc tầng (nhưng ko thay đổi vị trí tầng) */
+  z-index: 3;
+}
+
+.home-menu .content-menu .text p {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 150;
+  line-height: 60px;
+}
+
+.content-menu .multi-button {
+  width: 320px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-menu .multi-button button {
+  width: 150px;
+  height: 40px;
+  background: none;
+  border: 1px solid orange;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#button1 {
+  background-color: orange;
+  color: #fff;
+}
+
+#button2 {
+  color: orange;
+}
