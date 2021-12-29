@@ -79,7 +79,7 @@ Lưu ý:
 
 /*
 Giải thích:
-+ if: nếu 
++ if: nếu
 + else if: điều kiện con. Chỉ chạy khi mà điều kiện(đk) ở if ko thỏa mãn
 + else: trường hợp còn lại. Chỉ chậy khi mà đk ở else if không thỏa mãn
 
@@ -89,26 +89,64 @@ Bài toán: phân loại các lớp theo điểm đầu vào:
 - Lớp C: diem 4->6
 - Lớp D: diem dưới 4.
 */
-let Nam = 8;
-let Quang = 6.5;
-let DangQuang = 6;
-let QuocAnh = 5.5;
-let Duy = 1;
+// let Nam = 8;
+// let Quang = 6.5;
+// let DangQuang = 6;
+// let QuocAnh = 5.5;
+// let Duy = 1;
 
-let diem;
+// let diem = 2;
 
-if (diem >= 8) {
-    alert("Bạn đạt điều kiện vào lớp A");
-}
-else if (diem < 8 && diem >= 6) {
-    alert("Bạn đạt điều kiện vào lớp B");
-}
-else if (diem >= 4 && diem < 6) {
-    alert("Bạn đạt điều kiện vào lớp C");
-}
-else{
-    alert("Bạn đạt điều kiện vào lớp D");
-}
+// if (diem >= 8) {
+//     alert("Bạn đạt điều kiện vào lớp A");
+// }
+// else if (diem < 8 && diem >= 6) {
+//     alert("Bạn đạt điều kiện vào lớp B");
+// }
+// else if (diem >= 4 && diem < 6) {
+//     alert("Bạn đạt điều kiện vào lớp C");
+// }
+// else{
+//     alert("Bạn đạt điều kiện vào lớp D");
+// }
 
+
+
+
+////// Vòng lặp cơ bản trong javascript: while, do while, for
+//// VD vòng lặp while: bài toán in ra số từ 0->10;
+
+// let i = 0;
+// while (i < 11) {
+//     console.log(i); //
+//     i = i + 1;// tăng biến i lên 1 đơn vị sau mỗi lần lặp.
+// }
+
+
+//// VD về vòng lặp: do while: với bài toán tương tự
+// let i = 0;
+// do {
+//     console.log(i);
+//     i = i + 1;
+// }
+// while (i < 11);
+
+
+////VD: về vòng lặp for: với bài toán tương tự
+// C1: Không sử dụng 2 ô trống đầu và cuối
+// let i = 0;
+// for (; i < 11;) {
+//     console.log(i);
+//     i = i + 1;
+// }
+
+
+//C2: 
+// let i;
+// for (i = 0; i < 11; i = i + 1) {
+//     console.log(i); // 0,1,2,....10
+// }
+
+// sau vòng lặp: giá trị của i là: 11
 
 
