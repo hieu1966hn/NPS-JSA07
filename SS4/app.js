@@ -150,3 +150,33 @@ Bài toán: phân loại các lớp theo điểm đầu vào:
 // sau vòng lặp: giá trị của i là: 11
 
 
+////// Mảng (danh sách) trong Javascript: lưu trữ (mọi kiểu dữ liệu) dưới dạng danh sách 
+//// Khai báo mảng chưa có giá trị: 
+let arr = [];
+//// Khai báo mảng có giá trị 
+let arr1 = [1, "hello", 3, "Bốn", 5, true, false, null, 9, 10];
+console.log(arr1);
+console.log(arr1[0]);
+
+////// C,R,U,D với mảng: 
+
+// C: Create: thêm phần tử  vào trong mảng: sử dụng push
+arr.push("Dog");
+console.log("mảng sau khi thêm 1 phần tử là: " + arr);
+
+// R: Read: đọc mảng
+console.log(arr);
+
+// U: Update: sửa giá trị trong mảng:
+arr[0] = "snake";
+console.log("Mảng sau khi sửa dog -> snake là:", arr);
+// D: Delete: xóa phần tử trong mảng: Sử dụng hàm Splice
+arr.splice(0,1,"Ô thứ 3 trong Splice dùng để thêm phần tử");
+console.log("Mảng sau khi xóa phần tử đầu tiên là:", arr);
+/*
+Giai thích Splice:
+Box1: vị trí phần tử muốn xóa:
+Box2: số phần tử muốn xóa kể từ vị trí đó: 
+Box2: Thêm phần tử vào trong mảng kể từ vị trí đó
+
+*/
