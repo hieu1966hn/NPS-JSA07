@@ -48,10 +48,10 @@ Lưu ý:
 // console.log(a && b && c && d); // false
 
 // VD: về toán tử ||
-let e = false;
-let f = false;
-let g = true;
-console.log(e || f || g); // true
+// let e = false;
+// let f = false;
+// let g = true;
+// console.log(e || f || g); // true
 
 
 // VD về toán tử khác !=
@@ -95,15 +95,20 @@ let DangQuang = 6;
 let QuocAnh = 5.5;
 let Duy = 1;
 
-// if (Quang >= 8) {
-//     alert("Bạn đạt điều kiện vào lớp A");
-// }
-// else if (Quang < 8 && Quang >= 6) {
-//     alert("Bạn đạt điều kiện vào lớp B");
-// }
-// else {
+let diem;
 
-// }
+if (diem >= 8) {
+    alert("Bạn đạt điều kiện vào lớp A");
+}
+else if (diem < 8 && diem >= 6) {
+    alert("Bạn đạt điều kiện vào lớp B");
+}
+else if (diem >= 4 && diem < 6) {
+    alert("Bạn đạt điều kiện vào lớp C");
+}
+else{
+    alert("Bạn đạt điều kiện vào lớp D");
+}
 
 
 
