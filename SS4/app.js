@@ -34,6 +34,25 @@ Lưu ý:
 
 //// Toán tử so sánh: >, <, >=, <=, != (khác), == (dấu bằng: so sánh tương đối), === (dấu bằng: so sánh tuyệt đối)
 
+//// Toán tử điều kiện: &&, ||,..
+/*
+&&: TOÁN TỬ VÀ là toán tử tìm trong danh sách của nó trường đầu tiên nào trả về kq = false => đấy là kết quả trả về.
+||: TOÁN TỬ HOẶC là tìm trong danh sách của nó trường đầu tiên nào trả về kq = true => đấy là kết quả trả về.
+*/
+
+// VD về toán tử &&
+// let a = false;
+// let b = true;
+// let c = true;
+// let d = true;
+// console.log(a && b && c && d); // false
+
+// VD: về toán tử ||
+let e = false;
+let f = false;
+let g = true;
+console.log(e || f || g); // true
+
 
 // VD về toán tử khác !=
 // console.log("1 khác 2 true hay false? ", 1 != 2); // true
@@ -56,5 +75,35 @@ Lưu ý:
 */
 
 
-////// câu điều kiện trong JS: 
+////// câu điều kiện trong JS:  if -> (else if ) -> else
+
+/*
+Giải thích:
++ if: nếu 
++ else if: điều kiện con. Chỉ chạy khi mà điều kiện(đk) ở if ko thỏa mãn
++ else: trường hợp còn lại. Chỉ chậy khi mà đk ở else if không thỏa mãn
+
+Bài toán: phân loại các lớp theo điểm đầu vào:
+- lớp A: diem >=8
+- Lơp B: diem từ 6->8
+- Lớp C: diem 4->6
+- Lớp D: diem dưới 4.
+*/
+let Nam = 8;
+let Quang = 6.5;
+let DangQuang = 6;
+let QuocAnh = 5.5;
+let Duy = 1;
+
+// if (Quang >= 8) {
+//     alert("Bạn đạt điều kiện vào lớp A");
+// }
+// else if (Quang < 8 && Quang >= 6) {
+//     alert("Bạn đạt điều kiện vào lớp B");
+// }
+// else {
+
+// }
+
+
 
