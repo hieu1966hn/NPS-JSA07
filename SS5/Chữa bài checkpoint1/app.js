@@ -31,11 +31,39 @@ Hãy viết một đoạn code thực hiện chức năng khi di chuột vào th
 khi di chuột ra sẽ trở về màu cũ.
 */
 
-const bai02 = document.getElementById("bai02");
-bai02.addEventListener("mouseover", function () {
-    bai02.style.backgroundColor = "green"
-});
+// const bai02 = document.getElementById("bai02");
+// bai02.addEventListener("mouseover", function () {
+//     bai02.style.backgroundColor = "green"
+// });
 
-bai02.addEventListener("mouseleave", function () {
-    bai02.style.backgroundColor = "chocolate"
-});
+// bai02.addEventListener("mouseleave", function () {
+//     bai02.style.backgroundColor = "chocolate"
+// });
+
+//
+
+//// Câu 3:
+/*
+Câu 3:  Viết một function có tên numberOneTriangle() khi chạy function này,
+trên màn hình sẽ đưa ra hình sau: 
+1
+11
+111
+1111
+11111
+*/
+
+// i: số hàng tương ứng
+// j: số cột tương ứng
+function numberOneTriangle() {
+    
+  for (let i = 1; i < 6; i++) {
+    for (let j = 1; j <= i; j++) { // h1:c1, h2:c1->c2 => 11
+      document.write("1");
+    }
+    document.write("</br>"); // Câu lệnh xuống dòng
+  }
+  
+}
+
+numberOneTriangle();
