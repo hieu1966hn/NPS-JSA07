@@ -55,15 +55,40 @@ trên màn hình sẽ đưa ra hình sau:
 
 // i: số hàng tương ứng
 // j: số cột tương ứng
-function numberOneTriangle() {
-    
-  for (let i = 1; i < 6; i++) {
-    for (let j = 1; j <= i; j++) { // h1:c1, h2:c1->c2 => 11
-      document.write("1");
-    }
-    document.write("</br>"); // Câu lệnh xuống dòng
-  }
+// function numberOneTriangle() {
+
+//   for (let i = 1; i < 6; i++) {
+//     for (let j = 1; j <= i; j++) { // h1:c1, h2:c1->c2 => 11
+//       document.write("1");
+//     }
+//     document.write("</br>"); // Câu lệnh xuống dòng
+//   }
+
+// }
+
+// numberOneTriangle();
+
+/*
+ Bài 04: Thiết kế một chiếc đồng hồ hiển thị giờ hiện tại, sử dụng HTML/ CSS, JS. 
+Ảnh mẫu: 
+
+*/
+function clock() {
+  let hour = document.getElementById("hour");
+  let minute = document.getElementById("minute");
+  let second = document.getElementById("second");
+
+  let currentHour = new Date().getHours();
+  let currentMinute = new Date().getMinutes();
+  let currentSecond = new Date().getSeconds();
+
+  hour.innerHTML = currentHour;
+  minute.innerHTML = currentMinute;
+  second.innerHTML = currentSecond;
   
 }
+setInterval(clock, 1000);
+// Lưu ý: khi sử dụng setInterval: Tham số đầu tiên chỉ cần truyền vào tên hàm là đủ,
+// không cần thêm dấu "()" vì setInterval nó tự động gọi tới hàm đó.
+// 1s = 1000ms
 
-numberOneTriangle();
