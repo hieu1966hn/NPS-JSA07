@@ -66,8 +66,11 @@ let menu = [
 
 // Comment hết phần bên trên đi, vì chúng ta đã đẩy thành localstorage nên ko  cần nó nữa
 let items = document.querySelector('.items');
+let getMenuFromLocalStorage = JSON.parse(localStorage.getItem("menu"));
+console.log("getMenuFromLocalStorage: ", getMenuFromLocalStorage);
+
 console.log(items);
-for(item of menu){ // Item là biến chạy từ vị trí thứ 0 -> vị trí cuoi cùng của mảng menu
+for(item of getMenuFromLocalStorage){ // Item là biến chạy từ vị trí thứ 0 -> vị trí cuoi cùng của mảng menu
 items.innerHTML +=`
 <div class="item">
 <div class="product-view">
