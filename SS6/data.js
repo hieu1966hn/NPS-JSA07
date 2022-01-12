@@ -48,19 +48,42 @@ let menu = [
 
 // Đẩy dữ liệu lên localStorage
 
-let menuCart = [];
-// Ép kiểu sang chuỗi
-let menuCartString = JSON.stringify(menuCart);
-// Đẩy lên localStorage với câu lệnh sau
-localStorage.setItem("menuCart", menuCartString);
+// let menuCart = [];
+// // Ép kiểu sang chuỗi
+// let menuCartString = JSON.stringify(menuCart);
+// // Đẩy lên localStorage với câu lệnh sau
+// localStorage.setItem("menuCart", menuCartString);
 
 
-// Bắt đầu ép kiểu dữ liệu sang chuỗi để đẩy lên LocalStorage.
-let menuString = JSON.stringify(menu); // ép kiểu cho mảng menu -> chuỗi
-console.log("menuString: ", menuString);
+// // Bắt đầu ép kiểu dữ liệu sang chuỗi để đẩy lên LocalStorage.
+// let menuString = JSON.stringify(menu); // ép kiểu cho mảng menu -> chuỗi
+// console.log("menuString: ", menuString);
 
 
-// Đẩy mảng này lên LocalStorage (lưu trữ dữ liệu online)
-localStorage.setItem( "menu",menuString );
+// // Đẩy mảng này lên LocalStorage (lưu trữ dữ liệu online)
+// localStorage.setItem( "menu",menuString );
+
+
+// Comment hết phần bên trên đi, vì chúng ta đã đẩy thành localstorage nên ko  cần nó nữa
+let items = document.querySelector('.items');
+console.log(items);
+for(item of menu){ // Item là biến chạy từ vị trí thứ 0 -> vị trí cuoi cùng của mảng menu
+items.innerHTML +=`
+<div class="item">
+<div class="product-view">
+  <img class="img-icon" src="${item.img}" alt="Not found">
+  <button type='input' value="${item.name}" >Add to list</button>
+</div>
+
+<div class="content">
+  <h3>${item.name}</h3>
+</div>
+<p>
+${item.title}
+</p>
+
+</div>
+`
+}
  
 
