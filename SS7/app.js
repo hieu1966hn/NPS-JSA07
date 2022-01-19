@@ -35,6 +35,9 @@ console.log("Pi: ", Pi);
   // console.log("cha: ", cha); // Lỗi, vì không thuộc phạm vi khai báo
 }
 console.log("con: ", con);// in ra gì?
+// NX: khai báo biến với cú pháp var: đưa toàn bộ các biến được khai báo với cú pháp var cho toàn bộ file sử dụng
+// Lưu ý: Khi khai báo biến: nên khai báo bằng từ khóa "let".
+
 
 
 
