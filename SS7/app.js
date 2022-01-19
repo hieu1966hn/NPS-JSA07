@@ -39,5 +39,32 @@ console.log("con: ", con);// in ra gì?
 // Lưu ý: Khi khai báo biến: nên khai báo bằng từ khóa "let".
 
 
+// 3. Arrow Function (hàm mũi tên)
+// Cú pháp:
+// VD: khai báo hàm cộng 2 số bất kỳ: 
+function sum(a, b) {
+  return a + b
+}
+
+sum(1, 2);// 3
+console.log("sum(1,2): ", sum(1, 2));
+
+// C2: 
+let sum1 = function (a, b) {
+  return a + b
+}
+console.log("sum1(3,4): ", sum1(3, 4));
+
+// C3: Arrow function: nên dùng const
+const sum2 = (a, b) => {
+  return a + b;
+}
+console.log("sum2(5,5): ", sum2(5, 5));
+
+/*
+const tenHam = (parmeters,..) => {
+  code JS trong này..
+}
+*/
 
 
