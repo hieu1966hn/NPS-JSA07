@@ -25,14 +25,16 @@ console.log("Pi: ", Pi);
 /// VD: 
 {
   {
-    let cha = "Đây là biến được khai báo ở khối 2"
+    // let cha = "Đây là biến được khai báo ở khối 2"
     {
       // console.log("cha: ", cha);
+      var con = "Đây là biến được khai báo ở khối 3"
 
     }
   }
-  console.log("cha: ", cha); // Lỗi, vì không thuộc phạm vi khai báo
+  // console.log("cha: ", cha); // Lỗi, vì không thuộc phạm vi khai báo
 }
+console.log("con: ", con);// in ra gì?
 
 
 
