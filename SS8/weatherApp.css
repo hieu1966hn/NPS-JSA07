@@ -14,3 +14,13 @@
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
 }
+
+.section-bar {
+  width: 50%;
+  margin: 0px auto;
+  padding-top: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+}
