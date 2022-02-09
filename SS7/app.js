@@ -22,7 +22,7 @@ console.log("Pi: ", Pi);
 // var b = "world"
 // console.log(a + " " + b);
 
-// /// VD: 
+// /// VD:
 // {
 //   {
 //     // let cha = "Đây là biến được khai báo ở khối 2"
@@ -42,7 +42,7 @@ console.log("Pi: ", Pi);
 // 3. Arrow Function (hàm mũi tên)
 // Lưu ý: khi sau mũi tên là 1 câu lệnh. Hiểu nó là viết tắt của return
 // Cú pháp:
-// VD: khai báo hàm cộng 2 số bất kỳ: 
+// VD: khai báo hàm cộng 2 số bất kỳ:
 // function sum(a, b) {
 //   return a + b
 // }
@@ -50,7 +50,7 @@ console.log("Pi: ", Pi);
 // sum(1, 2);// 3
 // console.log("sum(1,2): ", sum(1, 2));
 
-// // C2: 
+// // C2:
 // let sum1 = function (a, b) {
 //   return a + b
 // }
@@ -84,12 +84,15 @@ const tenHam = (parmeters,..) => {
 // let hamX = (a, b = 1) => a * b;
 // console.log(hamX(2, 3)); // 2 * 1 = 2
 
-////// 5. Các tham số còn lại: 
-const X = (a, b, ...args) => {
-  console.log(`a = ${a}, b = ${b}, ... ${args.length} args left`);
-  console.log(args);
-}
+////// 5. Các tham số còn lại:
+// const X = (a, b, ...args) => {
+//   console.log(`a = ${a}, b = ${b}, ... ${args.length} args left`);
+//   console.log(args);
+// }
 
-X(2, 3);// 2,3
-X(1, 2, 3, 4, 5)// 1,2 345
+// X(2, 3);// 2,3
+// X(1, 2, 3, 4, 5)// 1,2 345
 
+
+
+let obj = {}
