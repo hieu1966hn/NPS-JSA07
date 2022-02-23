@@ -31,8 +31,8 @@ searchInput.addEventListener("change", (event) => {
       weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       temperature.innerHTML = data.main.temp
 
-      sunrise.innerHTML = data.sys.sunrise;
-      sunset.innerHTML = data.sys.sunset;
+      sunrise.innerHTML = moment.unix(data.sys.sunrise).format('HH:mm');
+      sunset.innerHTML = moment.unix(data.sys.sunset).format('HH:mm')
 
       humidity.innerHTML = data.main.humidity
       windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(2)
