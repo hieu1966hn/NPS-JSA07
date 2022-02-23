@@ -9,6 +9,7 @@ const weatherIcon = document.querySelector('.weather-icon');
 const temperature = document.querySelector(".temperature");
 
 const sunrise = document.querySelector(".sunrise");
+console.log("sunrise: ", sunrise);
 const sunset = document.querySelector(".sunset");
 
 const humidity = document.querySelector(".humidity")
@@ -30,6 +31,11 @@ searchInput.addEventListener("change", (event) => {
       weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
       temperature.innerHTML = data.main.temp
 
+      sunrise.innerHTML = data.sys.sunrise;
+      sunset.innerHTML = data.sys.sunset;
+
+      humidity.innerHTML = data.main.humidity
+      windSpeed.innerHTML = (data.wind.speed * 3.6).toFixed(2)
     });
 
 
