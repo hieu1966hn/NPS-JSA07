@@ -19,13 +19,16 @@ const windSpeed = document.querySelector(".wind-speed");
 searchInput.addEventListener("change", (event) => {
   console.log(event.target.value);
   // request dữ liệu tới server thông qua fetch
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${APP_ID}&lang=vi`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${APP_ID}&lang=vi&units=metric`)
     .then(response => response.json())
     .then((data) => {
       console.log(data)
 
       cityName.innerHTML = data.name;
       weatherState.innerHTML = data.weather[0].description;
+
+      weatherIcon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
+      temperature.innerHTML = data.main.temp
 
     });
 
